@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('admin/login', [\App\Http\Controllers\Admin\UserController::class, 'login'])->name('admin-login');
 Route::post('admin/login_store', [\App\Http\Controllers\Admin\UserController::class, 'loginStore'])->name('admin-login-store');
+
+Route::prefix('admin')->middleware(['auth'])->group(function() {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+});
