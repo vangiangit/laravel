@@ -19,5 +19,5 @@ Route::post('admin/login_store', [\App\Http\Controllers\Admin\UserController::cl
 Route::prefix('admin')->middleware(['auth'])->group(function() {
     Route::get('/', function () {
         return view('welcome');
-    });
+    })->name('dashboard');
 });
