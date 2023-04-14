@@ -56,6 +56,12 @@ return [
             'throw' => false,
         ],
 
+        'public_uploads' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/images/'.env('APP_SITE'),
+            'url' => env('APP_URL') . '/images/'.env('APP_SITE'),
+            'visibility' => 'public',
+        ],
     ],
 
     /*

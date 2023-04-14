@@ -9,7 +9,7 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>Final</b>Style</a>
+                <img src="{{ asset('/statics/admin/img/sixdo_bg_logo.png') }}" alt="Logo" style="float: none; height: 50px">
             </div>
             <div class="card-body">
                 <form action="{{route('admin-login-store')}}" method="post">
@@ -17,7 +17,7 @@
                         <input type="text" name="username" id="username" class="form-control" placeholder="Tên đăng nhập">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <i class="fas fa-user"></i>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                    <?php /* <div class="row">
                         <div class="col-8">
                             <div class="icheck-primary">
                                 <input type="checkbox" id="remember">
@@ -43,7 +44,7 @@
                             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
                         </div>
                         <!-- /.col -->
-                    </div>
+                    </div> */?>
                     @csrf
                 </form>
             </div>

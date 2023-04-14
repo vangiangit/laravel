@@ -1,0 +1,183 @@
+.main-footer{
+    display: none;
+}
+
+.sidebar{
+    background: #212121;
+}
+
+.brand-link{
+    background: #000000 !important;
+    border-bottom-color: #000000 !important;
+}
+
+.main-header{
+    background: #212121;
+    color: #F6F3E4 !important;
+
+    a{
+        color: #F6F3E4 !important;
+    }
+}
+
+.content-wrapper{
+    background-color: #F6F3E4;
+}
+
+.navbar-nav{
+    .nav-link{
+        text-transform: uppercase;
+    }
+}
+
+.small-box{
+    background: #E3DDBB;
+    text-align: center;
+
+    &:hover{
+        background-color: #fff;
+    }
+
+    a{
+        color: #F6F3E4;
+    }
+}
+
+.table{
+    thead{
+        tr{
+            th{
+                background-color: #F0ECD6;
+                border-color: #E3DDBB;
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            color: #212121;
+
+            td{
+                vertical-align: middle;
+            }
+
+            background-color: #F0ECD6;
+
+            &:nth-of-type(odd){
+                background-color: #F6F3E4;
+            }
+
+            a{
+                color: #B00020DE;
+            }
+
+            span{
+                color: #666;
+            }
+        }
+    }
+}
+
+.content-header{
+    .row{
+        border-bottom: 2px solid #E3DDBB;
+        padding-bottom: 8px;
+    }
+}
+
+.detail-info{
+    span{
+        font-size: 13px;
+        color: #666;
+    }
+
+    p{
+        border-bottom: 1px solid #E3DDBB;
+    }
+}
+
+.row-btn{
+    .btn{
+        width: 100%;
+        color: #000000;
+
+        &.btn-danger{
+            background-color: #E3DDBB;
+            border-color: #E3DDBB;
+        }
+
+        &.btn-success{
+            background-color: #212121;
+            color: #fff;
+        }
+    }
+}
+
+.dropzone{
+    border: 0 none !important;
+    background: transparent !important;
+    padding: 0 !important;
+
+    .dz-preview{
+        background: transparent !important;
+
+        &.dz-image-preview{
+
+        }
+
+        .dz-remove{
+            z-index: 99;
+            position: absolute;
+            text-indent: -9999px;
+            right: 0;
+            top: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #000000;
+            border-radius: 100%;
+        }
+    }
+}
+
+.login-page{
+    background: #F6F3E4 url("../img/sixdo_bg_login.png") center center no-repeat !important;
+
+    .card-primary.card-outline{
+        background: transparent !important;
+        border: 0 none !important;
+        box-shadow: none;
+
+        .card-header,
+        .card-body{
+            border: 0 none;
+        }
+
+        .btn-primary{
+            height: 45px;
+            border-color: #212121;
+            background: #212121;
+            border-radius: 100px;
+        }
+
+        input{
+            height: 45px;
+        }
+
+        .input-group-append{
+            background-color: #E3DDBB;
+
+            .input-group-text{
+                background-color: #E3DDBB;
+            }
+        }
+    }
+}
+
+.dz-image{
+    width: 80px !important;
+    height: 120px !important;
+    
+    img{
+        width: 100%;
+    }
+}

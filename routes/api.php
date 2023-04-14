@@ -14,11 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
+Route::middleware(['auth:api'])->group(function() {
+    Route::prefix('product')->group(function() {
+        Route::post('create', [\App\Http\Controllers\Api\ProductController::class, 'create'])->name('api-product-create');
+    });
 
-Route::get('test', function (Request $request) {
-    return response()->json([]);
+    Route::prefix('type')->group(function() {
+        Route::get('/', [\App\Http\Controllers\Api\ProductTypeController::class, 'index'])->name('api-type-index');
+        Route::post('create', [\App\Http\Controllers\Api\ProductTypeController::class, 'create'])->name('api-type-create');
+    });
+
+    Route::prefix('agency')->group(function() {
+        Route::get('/', [\App\Http\Controllers\Api\ProductAgencyController::class, 'index'])->name('api-agency-index');
+        Route::post('create', [\App\Http\Controllers\Api\ProductAgencyController::class, 'create'])->name('api-agency-create');
+    });
 });
