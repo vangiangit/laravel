@@ -1,1 +1,149 @@
-.main-footer{display:none}.sidebar{background:#212121}.brand-link{background:#000 !important;border-bottom-color:#000 !important}.main-header{background:#212121;color:#f6f3e4 !important}.main-header a{color:#f6f3e4 !important}.content-wrapper{background-color:#f6f3e4}.navbar-nav .nav-link{text-transform:uppercase}.small-box{background:#e3ddbb;text-align:center}.small-box:hover{background-color:#fff}.small-box a{color:#f6f3e4}.table thead tr th{background-color:#f0ecd6;border-color:#e3ddbb}.table tbody tr{color:#212121;background-color:#f0ecd6}.table tbody tr td{vertical-align:middle}.table tbody tr:nth-of-type(odd){background-color:#f6f3e4}.table tbody tr a{color:rgba(176,0,32,.8705882353)}.table tbody tr span{color:#666}.content-header .row{border-bottom:2px solid #e3ddbb;padding-bottom:8px}.detail-info span{font-size:13px;color:#666}.detail-info p{border-bottom:1px solid #e3ddbb}.row-btn .btn{width:100%;color:#000}.row-btn .btn.btn-danger{background-color:#e3ddbb;border-color:#e3ddbb}.row-btn .btn.btn-success{background-color:#212121;color:#fff}.dropzone{border:0 none !important;background:rgba(0,0,0,0) !important;padding:0 !important}.dropzone .dz-preview{background:rgba(0,0,0,0) !important}.dropzone .dz-preview .dz-remove{z-index:99;position:absolute;text-indent:-9999px;right:0;top:0;height:20px;width:20px;background-color:#000;border-radius:100%}.login-page{background:#f6f3e4 url("../img/sixdo_bg_login.png") center center no-repeat !important}.login-page .card-primary.card-outline{background:rgba(0,0,0,0) !important;border:0 none !important;box-shadow:none}.login-page .card-primary.card-outline .card-header,.login-page .card-primary.card-outline .card-body{border:0 none}.login-page .card-primary.card-outline .btn-primary{height:45px;border-color:#212121;background:#212121;border-radius:100px}.login-page .card-primary.card-outline input{height:45px}.login-page .card-primary.card-outline .input-group-append{background-color:#e3ddbb}.login-page .card-primary.card-outline .input-group-append .input-group-text{background-color:#e3ddbb}.dz-image{width:80px !important;height:120px !important}.dz-image img{width:100%}/*# sourceMappingURL=sixdo.css.map */
+.main-footer {
+  display: none;
+}
+
+.sidebar {
+  background: #212121;
+}
+
+.brand-link {
+  background: #000000 !important;
+  border-bottom-color: #000000 !important;
+}
+
+.main-header {
+  background: #212121;
+  color: #F6F3E4 !important;
+}
+.main-header a {
+  color: #F6F3E4 !important;
+}
+
+.content-wrapper {
+  background-color: #F6F3E4;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+}
+
+.small-box {
+  background: #E3DDBB;
+  text-align: center;
+}
+.small-box:hover {
+  background-color: #fff;
+}
+.small-box a {
+  color: #F6F3E4;
+}
+
+.table thead tr th {
+  background-color: #F0ECD6;
+  border-color: #E3DDBB;
+}
+.table tbody tr {
+  color: #212121;
+  background-color: #F0ECD6;
+}
+.table tbody tr td {
+  vertical-align: middle;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #F6F3E4;
+}
+.table tbody tr a {
+  color: rgba(176, 0, 32, 0.8705882353);
+}
+.table tbody tr span {
+  color: #666;
+}
+
+.content-header .row {
+  border-bottom: 2px solid #E3DDBB;
+  padding-bottom: 8px;
+}
+
+.detail-info span {
+  font-size: 13px;
+  color: #666;
+}
+.detail-info p {
+  border-bottom: 1px solid #E3DDBB;
+}
+
+.row-btn .btn {
+  width: 100%;
+  color: #000000;
+}
+.row-btn .btn.btn-danger {
+  background-color: #E3DDBB;
+  border-color: #E3DDBB;
+}
+.row-btn .btn.btn-success {
+  background-color: #212121;
+  color: #fff;
+}
+
+.dropzone {
+  border: 0 none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+.dropzone .dz-preview {
+  background: transparent !important;
+}
+.dropzone .dz-preview .dz-remove {
+  z-index: 99;
+  position: absolute;
+  text-indent: -9999px;
+  right: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #000000;
+  border-radius: 100%;
+}
+
+.login-page {
+  background: #F6F3E4 url("../img/sixdo_bg_login.png") center center no-repeat !important;
+}
+.login-page .card-primary.card-outline {
+  background: transparent !important;
+  border: 0 none !important;
+  box-shadow: none;
+}
+.login-page .card-primary.card-outline .card-header,
+.login-page .card-primary.card-outline .card-body {
+  border: 0 none;
+}
+.login-page .card-primary.card-outline .btn-primary {
+  height: 45px;
+  border-color: #212121;
+  background: #212121;
+  border-radius: 100px;
+}
+.login-page .card-primary.card-outline input {
+  height: 45px;
+}
+.login-page .card-primary.card-outline .input-group-append {
+  background-color: #E3DDBB;
+}
+.login-page .card-primary.card-outline .input-group-append .input-group-text {
+  background-color: #E3DDBB;
+}
+
+.dz-image {
+  width: 80px !important;
+  height: 120px !important;
+}
+.dz-image img {
+  width: 100%;
+}
+
+.images-preview .list-thumb img {
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=sixdo.css.map */

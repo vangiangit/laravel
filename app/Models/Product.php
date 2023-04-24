@@ -51,7 +51,8 @@ class Product extends BaseModel
         'ngay_nhan_mau_mkt' ,
         'thang_ra_ch' ,
         'ghi_chu',
-        'ten_san_pham'
+        'ten_san_pham',
+        'so_luong_du_kien'
     ];
 
     public function images()

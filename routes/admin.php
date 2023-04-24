@@ -26,6 +26,12 @@ Route::prefix('admin')->middleware(['auth'])->group(function() {
         Route::post('update/{id}', [\App\Http\Controllers\Admin\ProductController::class, 'update'])->where(['id' => '[0-9]+'])->name('admin-product-update');
     });
 
+    Route::prefix('order')->group(function() {
+        Route::get('/', [\App\Http\Controllers\Admin\OrderController::class, 'index'])->name('admin-order-list');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\OrderController::class, 'edit'])->where(['id' => '[0-9]+'])->name('admin-order-edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\OrderController::class, 'update'])->where(['id' => '[0-9]+'])->name('admin-order-update');
+    });
+
     Route::prefix('ajax')->group(function () {
         Route::post('uploadmultiimage/{config}', [\App\Http\Controllers\Admin\AjaxController::class, 'uploadMultiImage'])->name('admin-ajax-uploadmultiimage');
         Route::get('loadmultiimage/{config}', [\App\Http\Controllers\Admin\AjaxController::class, 'loadMultiImage'])->name('admin-ajax-loadmultiimage');

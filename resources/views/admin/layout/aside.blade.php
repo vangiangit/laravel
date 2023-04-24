@@ -29,6 +29,15 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('admin-order-list')}}" class="nav-link">
+                        <i class="nav-icon fas far fa-file-alt"></i>
+                        <p>
+                            Đơn hàng từ sàn
+                            <i class="right fas fa-angle-right"></i>
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
