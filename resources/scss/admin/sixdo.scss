@@ -3,20 +3,22 @@
 }
 
 .sidebar{
-    background: #212121;
+    background: #E3DDBB;
 }
 
 .brand-link{
-    background: #000000 !important;
-    border-bottom-color: #000000 !important;
+    background: #F6F3E4 !important;
+    border-bottom-color: #F6F3E4 !important;
+    text-align: center;
 }
 
 .main-header{
-    background: #212121;
-    color: #F6F3E4 !important;
+    background: #E3DDBB;
+    color: #212121 !important;
+    border-bottom-color: #E3DDBB !important;
 
     a{
-        color: #F6F3E4 !important;
+        color: #212121 !important;
     }
 }
 
@@ -39,7 +41,7 @@
     }
 
     a{
-        color: #F6F3E4;
+        color: #212121;
     }
 }
 
@@ -80,8 +82,8 @@
 
 .content-header{
     .row{
-        border-bottom: 2px solid #E3DDBB;
         padding-bottom: 8px;
+        text-transform: uppercase;
     }
 }
 
@@ -188,5 +190,33 @@
             margin-bottom: 20px;
             border-radius: 3px;
         }
+    }
+}
+
+.nav-sidebar{
+    .nav-item {
+        .nav-link{
+            color: #212121;
+        }
+
+        &:hover{
+            background-color: #212121;
+
+            .nav-link{
+                background-color: #212121;
+                color: #F6F3E4;
+
+                &:hover{
+                    background-color: #212121;
+                    color: #F6F3E4;
+                }
+            }
+        }
+    }
+} 
+
+.content{
+    .card{
+        box-shadow: none !important;
     }
 }

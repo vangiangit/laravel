@@ -11,14 +11,15 @@ use App\Services\ProductService;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
-
+use App\Exports\ProductExport;
+use Maatwebsite\Excel\Facades\Excel;
 class ProductController extends Controller
 {
     public function index(Request $request)
     {
         $svProduct = new ProductService();
 
-        $data = $svProduct->getAll();
+        $data = $svProduct->getList($request);
 
         $viewData = [
             'title' => 'Quản lý mẫu sản phẩm',
@@ -26,6 +27,15 @@ class ProductController extends Controller
         ];
 
         return view('admin.product.list', $viewData);
+    }
+
+    public function export(Request $request)
+    {
+        $svProduct = new ProductService();
+
+        $data = $svProduct->getAll()->toArray();
+
+        return Excel::download(new ProductExport($data), 'KHSX-'.date('Y-m-d-H-i-s').'.xlsx', );
     }
 
     public function edit(Request $request, $id)

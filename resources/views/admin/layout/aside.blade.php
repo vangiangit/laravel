@@ -1,7 +1,7 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary">
     <!-- Brand Logo -->
     <a href="{{route('dashboard')}}" class="brand-link">
-        <img src="{{ asset('/statics/admin/img/logo.png') }}" alt="Logo" class="brand-image" style="float: none;">
+        <img src="{{ asset('/statics/admin/img/logo.png') }}?v={{time()}}" alt="Logo" class="brand-image" style="float: none;">
     </a>
 
     <!-- Sidebar -->
@@ -29,7 +29,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{route('admin-order-list')}}" class="nav-link">
                         <i class="nav-icon fas far fa-file-alt"></i>
                         <p>
@@ -37,7 +37,7 @@
                             <i class="right fas fa-angle-right"></i>
                         </p>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

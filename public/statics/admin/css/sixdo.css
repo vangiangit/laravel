@@ -3,20 +3,22 @@
 }
 
 .sidebar {
-  background: #212121;
+  background: #E3DDBB;
 }
 
 .brand-link {
-  background: #000000 !important;
-  border-bottom-color: #000000 !important;
+  background: #F6F3E4 !important;
+  border-bottom-color: #F6F3E4 !important;
+  text-align: center;
 }
 
 .main-header {
-  background: #212121;
-  color: #F6F3E4 !important;
+  background: #E3DDBB;
+  color: #212121 !important;
+  border-bottom-color: #E3DDBB !important;
 }
 .main-header a {
-  color: #F6F3E4 !important;
+  color: #212121 !important;
 }
 
 .content-wrapper {
@@ -35,7 +37,7 @@
   background-color: #fff;
 }
 .small-box a {
-  color: #F6F3E4;
+  color: #212121;
 }
 
 .table thead tr th {
@@ -60,8 +62,8 @@
 }
 
 .content-header .row {
-  border-bottom: 2px solid #E3DDBB;
   padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .detail-info span {
@@ -144,6 +146,25 @@
 .images-preview .list-thumb img {
   margin-bottom: 20px;
   border-radius: 3px;
+}
+
+.nav-sidebar .nav-item .nav-link {
+  color: #212121;
+}
+.nav-sidebar .nav-item:hover {
+  background-color: #212121;
+}
+.nav-sidebar .nav-item:hover .nav-link {
+  background-color: #212121;
+  color: #F6F3E4;
+}
+.nav-sidebar .nav-item:hover .nav-link:hover {
+  background-color: #212121;
+  color: #F6F3E4;
+}
+
+.content .card {
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=sixdo.css.map */

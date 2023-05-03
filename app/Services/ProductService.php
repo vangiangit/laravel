@@ -10,4 +10,9 @@ class ProductService extends BaseService
     {
         return ProductRepository::class;
     }        
+
+    public function getList($request)
+    {
+        return $this->repo->getList($request);
+    }
 }

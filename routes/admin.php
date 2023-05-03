@@ -24,6 +24,7 @@ Route::prefix('admin')->middleware(['auth'])->group(function() {
         Route::get('/', [\App\Http\Controllers\Admin\ProductController::class, 'index'])->name('admin-product-list');
         Route::get('edit/{id}', [\App\Http\Controllers\Admin\ProductController::class, 'edit'])->where(['id' => '[0-9]+'])->name('admin-product-edit');
         Route::post('update/{id}', [\App\Http\Controllers\Admin\ProductController::class, 'update'])->where(['id' => '[0-9]+'])->name('admin-product-update');
+        Route::get('/export', [\App\Http\Controllers\Admin\ProductController::class, 'export'])->name('admin-product-export');
     });
 
     Route::prefix('order')->group(function() {
